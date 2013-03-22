@@ -1,0 +1,1 @@
+Simple mapreduce practice script in python and bash.
