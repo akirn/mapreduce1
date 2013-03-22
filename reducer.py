@@ -12,3 +12,5 @@ for line in sys.stdin:
             print(previous_key + " was found " + total + " times.")
         previous_key = key
         total = 0
+
+    total += int(value)
