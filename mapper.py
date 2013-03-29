@@ -4,11 +4,8 @@ import sys
 import re
 
 counts = {}
-regex = re.compile('[a-zA-Z]+')
 
 for line in sys.stdin:
-    words = line.split()
+    words = re.findall(r"\w+", line)
     for word in words:
-        m = regex.match(word)
-        if m is not None:
-            print(m.group().lower() + "\t" + str(1))
+        print(word.lower() + "\t" + str(1))
