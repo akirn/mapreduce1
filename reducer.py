@@ -4,7 +4,7 @@ import sys
 
 def output(key, total):
     if key is not None:
-            print(key + " was found " + str(total) + " times.")
+            print(str(total) + key)
 
 previous_key = None
 total = 0
