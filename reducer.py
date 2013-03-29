@@ -1,10 +1,10 @@
-#!/usr/local/bin/python3
+#!/usr/bin/env python
 
 import sys
 
 def output(key, total):
-    if key != None:
-            print(key + " was found " + total + " times.")
+    if key is not None:
+            print(key + " was found " + str(total) + " times.")
 
 previous_key = None
 total = 0
