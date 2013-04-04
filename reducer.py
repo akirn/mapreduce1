@@ -4,7 +4,7 @@ import sys
 
 def output(key, total):
     if key is not None:
-            print(str(total) + key)
+            print(str(total) + "\t" + key)
 
 previous_key = None
 total = 0
